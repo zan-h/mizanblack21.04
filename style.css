@@ -36,7 +36,7 @@ section {
 
 /* Header & Footer */
 .main-header, .main-footer {
-    background-color: #111111; /* Slightly lighter black for contrast */
+    background-color: #F2F0EF; /* Changed to off-white */
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
@@ -48,7 +48,7 @@ section {
 .logo {
     font-size: 1.5em;
     font-weight: bold;
-    color: #FFFFFF;
+    color: #000000; /* Changed from #FFFFFF to black for better visibility */
 }
 
 .header-image {
@@ -77,6 +77,10 @@ section {
 
 .main-header nav ul li, .main-footer nav ul li {
     margin-left: 20px;
+}
+
+.main-header nav ul li a {
+    color: #000000; /* Changed link color in header for better visibility on white background */
 }
 
 .main-footer {

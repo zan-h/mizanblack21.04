@@ -167,6 +167,46 @@ section {
 /* Showcase Section */
 #showcase {
  background-color: #111111;
+ padding: 80px 20px;
+}
+
+#showcase h2 {
+ font-size: 2.5em;
+ margin-bottom: 20px;
+}
+
+.substack-promo {
+ max-width: 500px;
+ margin: 40px auto;
+ background-color: #1a1a1a;
+ border: 1px solid #333;
+ border-radius: 10px;
+ padding: 20px;
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.substack-promo:hover {
+ transform: translateY(-5px);
+ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.substack-promo a {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ color: #fff;
+ text-decoration: none;
+}
+
+.substack-logo {
+ width: 150px;
+ height: auto;
+ margin-bottom: 15px;
+}
+
+.substack-promo p {
+ font-size: 1.1em;
+ margin: 0;
 }
 
 .showcase-items {
@@ -177,12 +217,50 @@ section {
     flex-wrap: wrap;
 }
 
+.showcase-item {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.showcase-item:hover {
+    transform: translateY(-10px);
+}
+
 .showcase-item img {
-    width: 100px; /* Adjust size as needed */
-    height: auto;
-    background-color: #333;
-    padding: 5px;
-    border: 1px solid #555;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.showcase-item h3 {
+    font-size: 1.4em;
+    margin: 0 0 10px 0;
+}
+
+.showcase-item p {
+    color: #ddd;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    color: #FF4136;
+    font-weight: bold;
+    margin-top: 10px;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 2px;
+    transition: border-color 0.3s ease;
+}
+
+.read-more:hover {
+    text-decoration: none;
+    border-color: #FF4136;
 }
 
 /* Benefits Section */

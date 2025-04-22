@@ -275,9 +275,10 @@ section {
     margin: 30px auto;
     background-color: #121212;
     border: 1px solid #D5C7BC;
-    border-radius: 10px;
+    border-radius: 8px;
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
 }
 
 .substack-promo:hover {
@@ -285,23 +286,18 @@ section {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-.substack-promo a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #F8F1E4;
-    text-decoration: none;
-}
-
-.substack-logo {
-    width: 150px;
+.substack-promo img {
+    width: 100%;
+    max-width: 300px;
     height: auto;
+    border-radius: 5px;
     margin-bottom: 15px;
 }
 
-.substack-promo p {
-    font-size: 1.1em;
-    margin: 0;
+.substack-promo h3 {
+    color: #EC7357;
+    margin-top: 0;
+    font-size: 1.4em;
 }
 
 .showcase-items {
@@ -744,4 +740,66 @@ iframe[src*="cal.com"] {
 /* Ensure all boxes size correctly */
 * {
     box-sizing: border-box;
+}
+
+/* Hide specific footer elements */
+.main-footer .social-links {
+    display: none !important;
+}
+
+.main-footer .footer-cta {
+    display: none !important;
+}
+
+/* Remove social media link buttons that appear at the bottom */
+.footer-social-links,
+a[href*="instagram"],
+a[href*="youtube"],
+a[href*="substack"],
+a[href*="twitter"],
+a[href*="x.com"] {
+    display: none !important;
+}
+
+/* Hide any elements with these text labels at the bottom of the page */
+a:has(span:contains("Instagram")),
+a:has(span:contains("YouTube")),
+a:has(span:contains("Substack")),
+a:has(span:contains("X")),
+button:contains("Get Started") {
+    display: none !important;
+}
+
+/* Hide container of social media buttons if they use a different structure */
+.social-container,
+.social-buttons,
+.get-started-container,
+nav.social-nav {
+    display: none !important;
+}
+
+/* Alternative approach for Cal.com footer buttons */
+.booking-footer-buttons,
+.cal-footer-elements,
+.cal-footer-actions,
+div[data-testid="footer-buttons"],
+div[class*="footer"] a[href*="instagram"],
+div[class*="footer"] a[href*="youtube"],
+div[class*="footer"] a[href*="substack"],
+div[class*="footer"] a[href*="twitter"],
+div[class*="footer"] a[href*="x.com"] {
+    display: none !important;
+}
+
+/* Remove unused Featured Image styles */
+.featured-image {
+    display: none;
+}
+
+.worldview-image {
+    transition: transform 0.3s ease;
+}
+
+.worldview-image:hover {
+    transform: scale(1.03);
 } 

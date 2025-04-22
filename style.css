@@ -111,12 +111,50 @@ section {
 }
 
 .main-footer {
-    flex-direction: column;
+    padding: 8px 30px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     text-align: center;
 }
 
+.main-footer .logo {
+    flex: 0 0 90px;
+}
+
 .main-footer nav {
-    margin: 15px 0;
+    flex: 1;
+    margin: 5px auto;
+    display: flex;
+    justify-content: center;
+    padding-left: 100px;  /* Add left padding to shift menu to the right */
+}
+
+.main-footer nav ul {
+    justify-content: center;
+}
+
+.main-footer nav ul li:not(:last-child)::after {
+    content: "|";
+    position: absolute;
+    right: -12px;
+    color: #121212;
+}
+
+.main-footer nav ul li a {
+    color: #121212;
+    text-transform: uppercase;
+    font-family: 'Geist Mono', monospace;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+
+.main-footer p {
+    flex: 0 0 auto;
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    color: #121212;
 }
 
 .main-footer .footer-cta {
@@ -143,12 +181,6 @@ section {
     color: #EC7357;
     text-decoration: none;
     border-color: #EC7357;
-}
-
-.main-footer p {
-    margin-top: 15px;
-    font-size: 0.9em;
-    color: #121212;
 }
 
 
@@ -957,5 +989,10 @@ div[class*="footer"] a[href*="x.com"] {
 
 /* Override to re-show the 'Videos' link in the header nav, counteracting the global hide rule */
 .main-header nav ul li a[href*="youtube"] {
+    display: inline-block !important;
+}
+
+/* Override to re-show the 'Videos' link in the footer nav */
+.main-footer nav ul li a[href*="youtube"] {
     display: inline-block !important;
 } 

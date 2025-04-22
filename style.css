@@ -802,4 +802,104 @@ div[class*="footer"] a[href*="x.com"] {
 
 .worldview-image:hover {
     transform: scale(1.03);
+}
+
+/* Blog/Article Page Styles */
+.page-content {
+    max-width: 800px; /* Adjust as needed */
+    margin: 40px auto; /* Center content and add top/bottom margin */
+    padding: 0 20px; /* Add side padding */
+}
+
+.page-content h1 {
+    text-align: center; /* Center the main title */
+    margin-bottom: 30px;
+}
+
+/* Article List Styles */
+.article-list {
+    margin-top: 30px;
+}
+
+.article-summary {
+    border-bottom: 1px solid #333; /* Separator line */
+    padding: 25px 0;
+    margin-bottom: 15px;
+}
+
+.article-summary:last-child {
+    border-bottom: none;
+}
+
+.article-summary h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.article-summary h2 a {
+    color: #F8F1E4; /* Cream color for title links */
+    text-decoration: none;
+}
+
+.article-summary h2 a:hover {
+    color: #EC7357; /* Coral on hover */
+    text-decoration: underline;
+}
+
+.article-meta {
+    font-size: 0.9em;
+    color: #D5C7BC; /* Beige */
+    margin-bottom: 10px;
+}
+
+/* Single Blog Post Styles */
+.blog-post h1 {
+     /* Inherits centering from .page-content h1 */
+     margin-bottom: 15px; /* Smaller bottom margin */
+}
+
+.blog-featured-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* Limit image height */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: block; /* Ensure it takes full width */
+}
+
+.blog-post-date {
+    text-align: center;
+    font-size: 0.95em;
+    color: #D5C7BC;
+    margin-bottom: 35px; /* Space between date and content */
+}
+
+.blog-post-content {
+    /* Content inherits max-width from .page-content */
+    /* Text styling (font, color) comes from body defaults */
+    line-height: 1.7; /* Slightly increased line height for readability */
+}
+
+.blog-post-content p {
+    margin-bottom: 1.2em;
+}
+
+.blog-post-content ul {
+    margin-bottom: 1.2em;
+    padding-left: 30px;
+}
+
+.blog-post-content li {
+    margin-bottom: 0.5em;
+}
+
+.blog-post-content a {
+    /* Link color already defined globally */
+    border-bottom: 1px dotted #EC7357; /* Subtle underline for links in content */
+}
+
+.blog-post-content a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #EC7357;
 } 

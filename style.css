@@ -1003,6 +1003,9 @@ div[class*="footer"] a[href*="x.com"] {
 #hero a[href*="x.com"],
 #hero a[href*="twitter"],
 #hero a[href*="instagram"],
-#hero a[href*="linkedin"] {
+#hero a[href*="linkedin"],
+/* Override to show Worldview XTC substack image links */
+.substack-images a[href*="substack"],
+.image-container a[href*="substack"] {
     display: inline-block !important;
 } 

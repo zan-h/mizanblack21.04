@@ -995,4 +995,14 @@ div[class*="footer"] a[href*="x.com"] {
 /* Override to re-show the 'Videos' link in the footer nav */
 .main-footer nav ul li a[href*="youtube"] {
     display: inline-block !important;
+}
+
+/* Override to re-show links in the hero section */
+#hero a[href*="substack"],
+#hero a[href*="youtube"],
+#hero a[href*="x.com"],
+#hero a[href*="twitter"],
+#hero a[href*="instagram"],
+#hero a[href*="linkedin"] {
+    display: inline-block !important;
 } 

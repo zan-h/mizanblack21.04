@@ -1,19 +1,27 @@
-# Personal Website
+# Personal Website - Mizan Haque
 
-This project contains a simple personal website structure based on provided screenshots.
+A clean, minimalist personal website featuring my writing, projects, and consultation services.
 
 ## Structure
 
-- `index.html`: The main HTML file containing the website's content and structure.
-- `style.css`: The CSS file containing the styles for layout, colors (black, red, white theme), and basic responsiveness.
+- `index.html`: The main landing page with information about me and my work.
+- `articles.html`: A page listing my published articles.
+- `blog/`: Directory containing individual blog post pages:
+  - `between-drafts-podcast.html`: Article about my core principles
+  - `how-to-build-your-own-software-with-ai.html`: Article about earned secure attachment
+  - `template-post.html`: Template for creating new blog posts
+- `style.css`: Comprehensive stylesheet for the entire site.
+- `script.js`: JavaScript functionality for the site.
+- `assets/`: Directory containing all images and media files.
 
-## How to View
+## Features
 
-1.  Ensure both `index.html` and `style.css` are in the same directory.
-2.  Open the `index.html` file in your web browser.
+- Clean, minimalist design with black and red accent colors
+- Responsive layout that works on mobile and desktop devices
+- Integration with Cal.com for scheduling consultations
+- Links to external platforms (YouTube, Substack, etc.)
 
-## Notes
+## Development Notes
 
-- The website uses placeholder text and images (`placeholder.png`). You will need to replace these with your actual content and image files.
-- The layout and styling are approximations based on the provided screenshots.
-- Basic responsiveness is included, but further adjustments might be needed for optimal viewing on all devices. 
+- The site is built using pure HTML, CSS, and JavaScript without frameworks.
+- Future improvements could include adding a proper blog CMS system. 
